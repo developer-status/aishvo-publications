@@ -6,6 +6,18 @@
   --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  /* Brand color fallbacks (hex provided by theme) */
+  --brand-primary: #FF6B35;
+  --brand-background: #FFF8F0;
+  --brand-text: #1A1A2E;
+  --brand-borders: #FFD4A3;
+  --brand-hover: #E85520;
+
+  /* RGB fallbacks used by existing theme variables */
+  --color-button: 255,107,53;
+  --color-background: 255,248,240;
+  --color-foreground: 26,26,46;
+  --color-badge-border: 255,212,163;
 }
 
 .product-card-wrapper .card,
