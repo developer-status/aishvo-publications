@@ -1,0 +1,429 @@
+{{ 'homepage.css' | asset_url | stylesheet_tag }}
+
+<section class="hp-homepage" aria-label="Aishvo Publications homepage">
+  <div class="hp-announcement-bar">
+    <div class="page-width hp-announcement-bar__content">
+      <p>
+        Free shipping on orders above <span>₹499</span> ✦ New books every month ✦ <span>Kids age 1–10 years</span>
+      </p>
+    </div>
+  </div>
+
+  <header class="hp-header" role="banner">
+    <div class="page-width hp-header__inner">
+      <div class="hp-header__logo-wrap">
+        <a href="{{ routes.root_url }}" class="hp-logo-link" aria-label="Aishvo Publications home">
+          <span class="hp-logo-icon" aria-hidden="true">
+            <span class="hp-logo-icon__book hp-logo-icon__book--left">
+              <span class="hp-logo-icon__spine"></span>
+            </span>
+            <span class="hp-logo-icon__book hp-logo-icon__book--right">
+              <span class="hp-logo-icon__spine hp-logo-icon__spine--purple"></span>
+            </span>
+          </span>
+          <span class="hp-logo-copy">
+            <span class="hp-logo-copy__brand">Aishvo</span>
+            <span class="hp-logo-copy__company">Publications</span>
+          </span>
+          <span class="hp-logo-copy__tagline">WHERE LITTLE STORIES BEGIN</span>
+        </a>
+      </div>
+
+      <nav class="hp-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#age-groups">Age groups</a>
+        <a href="#toys">Toys</a>
+        <a href="#about">About us</a>
+      </nav>
+
+      <div class="hp-header__actions">
+        <button class="hp-button hp-button--small" type="button">Shop now</button>
+        <button class="hp-icon-button" type="button" aria-label="Search">🔍</button>
+        <button class="hp-icon-button" type="button" aria-label="Wishlist">❤</button>
+        <a href="/cart" class="hp-icon-button" aria-label="Cart">🛍</a>
+      </div>
+
+      <button class="hp-header__menu-button" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hp-hero" id="home">
+    <div class="hp-hero__inner page-width">
+      <div class="hp-hero__copy">
+        <span class="hp-hero__badge">✦ New arrivals for 2025</span>
+        <h1>Books that make <span class="hp-highlight">little minds</span> shine</h1>
+        <p>Colorful, joyful books crafted with love for curious kids aged 1 to 10 years. Published in India by Aishvo Publications.</p>
+
+        <div class="hp-hero__buttons">
+          <a href="#books" class="hp-button hp-button--primary">Shop all books</a>
+          <a href="#age-groups" class="hp-button hp-button--secondary">Browse by age</a>
+        </div>
+
+        <div class="hp-hero__stats">
+          <div class="hp-stat">
+            <span class="hp-stat__value">50+</span>
+            <span class="hp-stat__label">Happy kids</span>
+          </div>
+          <div class="hp-stat">
+            <span class="hp-stat__value">5</span>
+            <span class="hp-stat__label">Book titles</span>
+          </div>
+          <div class="hp-stat">
+            <span class="hp-stat__value">4</span>
+            <span class="hp-stat__label">Platforms</span>
+          </div>
+          <div class="hp-stat">
+            <span class="hp-stat__value">★ 4.9</span>
+            <span class="hp-stat__label">Parent rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hp-hero__visual" aria-hidden="true">
+        <div class="hp-book-stack">
+          <div class="hp-book hp-book--1">🔤</div>
+          <div class="hp-book hp-book--2">🎨</div>
+          <div class="hp-book hp-book--3">🦁</div>
+          <div class="hp-book hp-book--4">🧩</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-trust" aria-label="Trust benefits">
+    <div class="page-width hp-trust__inner">
+      <div class="hp-trust__item"><span class="hp-trust__icon">🚚</span>Free delivery above ₹499</div>
+      <div class="hp-trust__item"><span class="hp-trust__icon">🔁</span>Easy 7-day returns</div>
+      <div class="hp-trust__item"><span class="hp-trust__icon">🛡</span>BIS certified safe</div>
+      <div class="hp-trust__item"><span class="hp-trust__icon">🇮🇳</span>Made in India</div>
+      <div class="hp-trust__item"><span class="hp-trust__icon">💳</span>Secure payments</div>
+    </div>
+  </section>
+
+  <section class="hp-section hp-age" id="age-groups">
+    <div class="page-width hp-section__header">
+      <span class="hp-label-pill">Shop by age</span>
+      <h2>Find the perfect book for your child</h2>
+      <p>Every book carefully designed for the right age — so your child learns and grows at their own pace.</p>
+    </div>
+
+    <div class="hp-card-grid hp-age-grid">
+      <a href="#books" class="hp-card hp-card--age hp-card--soft">
+        <span class="hp-card__emoji">👶</span>
+        <span class="hp-card__title">Ages 1–2</span>
+        <span class="hp-card__subtitle">Board books</span>
+        <span class="hp-card__arrow">→</span>
+      </a>
+      <a href="#books" class="hp-card hp-card--age hp-card--purple">
+        <span class="hp-card__emoji">🧒</span>
+        <span class="hp-card__title">Ages 3–5</span>
+        <span class="hp-card__subtitle">Picture books</span>
+        <span class="hp-card__arrow">→</span>
+      </a>
+      <a href="#books" class="hp-card hp-card--age hp-card--green">
+        <span class="hp-card__emoji">📚</span>
+        <span class="hp-card__title">Ages 6–8</span>
+        <span class="hp-card__subtitle">Activity books</span>
+        <span class="hp-card__arrow">→</span>
+      </a>
+      <a href="#books" class="hp-card hp-card--age hp-card--teal">
+        <span class="hp-card__emoji">🎓</span>
+        <span class="hp-card__title">Ages 9–10</span>
+        <span class="hp-card__subtitle">Reader books</span>
+        <span class="hp-card__arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="hp-section hp-products" id="books">
+    <div class="page-width hp-section__header">
+      <span class="hp-label-pill hp-label-pill--secondary">Bestsellers</span>
+      <h2>Loved by kids across India</h2>
+    </div>
+
+    <div class="hp-card-grid hp-product-grid">
+      <article class="hp-product-card hp-product-card--orange">
+        <div class="hp-product-card__media">
+          <span class="hp-product-card__badge">Bestseller</span>
+          <span class="hp-product-card__age">2–5 yrs</span>
+          <span class="hp-product-card__emoji">ABC</span>
+        </div>
+        <div class="hp-product-card__body">
+          <h3>My First ABC Book</h3>
+          <p>Aishvo Publications</p>
+          <div class="hp-product-card__footer">
+            <span class="hp-product-card__price">₹199</span>
+            <span class="hp-product-card__mrp">₹250</span>
+            <button class="hp-button hp-button--mini">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="hp-product-card hp-product-card--purple-light">
+        <div class="hp-product-card__media">
+          <span class="hp-product-card__badge hp-product-card__badge--new">New</span>
+          <span class="hp-product-card__age">2–5 yrs</span>
+          <span class="hp-product-card__emoji">123</span>
+        </div>
+        <div class="hp-product-card__body">
+          <h3>My First 123 Book</h3>
+          <p>Aishvo Publications</p>
+          <div class="hp-product-card__footer">
+            <span class="hp-product-card__price">₹199</span>
+            <span class="hp-product-card__mrp">₹250</span>
+            <button class="hp-button hp-button--mini">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="hp-product-card hp-product-card--green-light">
+        <div class="hp-product-card__media">
+          <span class="hp-product-card__badge">Bestseller</span>
+          <span class="hp-product-card__age">3–7 yrs</span>
+          <span class="hp-product-card__emoji">🥕</span>
+        </div>
+        <div class="hp-product-card__body">
+          <h3>Fruits & Veggies Coloring</h3>
+          <p>Aishvo Publications</p>
+          <div class="hp-product-card__footer">
+            <span class="hp-product-card__price">₹149</span>
+            <span class="hp-product-card__mrp">₹199</span>
+            <button class="hp-button hp-button--mini">Add +</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="hp-section__footer">
+      <a href="#books" class="hp-button hp-button--outline">View all books →</a>
+    </div>
+  </section>
+
+  <section class="hp-section hp-bundle" id="bundle">
+    <div class="page-width hp-bundle__inner">
+      <div class="hp-bundle__content">
+        <span class="hp-bundle__pill">Best value</span>
+        <h2>Aishvo <span>Learning Kit</span> for your little one</h2>
+        <p>Everything your child needs to learn, color, and grow — bundled together at a special price.</p>
+
+        <div class="hp-bundle__items">
+          <div class="hp-bundle__item">
+            <span>My First ABC Book</span>
+            <strong>₹199</strong>
+          </div>
+          <div class="hp-bundle__item">
+            <span>ABC Flash Cards</span>
+            <strong>₹149</strong>
+          </div>
+          <div class="hp-bundle__item">
+            <span>12-color Crayon Set</span>
+            <strong>₹99</strong>
+          </div>
+        </div>
+
+        <div class="hp-bundle__total">
+          <span class="hp-bundle__save">You save ₹98!</span>
+          <div>
+            <span class="hp-bundle__old">₹447</span>
+            <strong class="hp-bundle__price">₹349</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="hp-bundle__visual">
+        <div class="hp-bundle-books">
+          <div class="hp-bundle-book hp-bundle-book--one">A</div>
+          <div class="hp-bundle-book hp-bundle-book--two">B</div>
+          <div class="hp-bundle-book hp-bundle-book--three">C</div>
+        </div>
+        <button class="hp-button hp-button--primary hp-bundle__cta">Add bundle to cart</button>
+        <p class="hp-bundle__note">Perfect as a gift!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-section hp-features" id="why-us">
+    <div class="page-width hp-section__header">
+      <span class="hp-label-pill">Why choose us</span>
+      <h2>Why parents love Aishvo Publications</h2>
+    </div>
+
+    <div class="hp-card-grid hp-feature-grid">
+      <div class="hp-feature-card">
+        <div class="hp-feature-card__icon">🎨</div>
+        <h3>Bright & colorful</h3>
+        <p>Full-color printing with bold, child-friendly illustrations kids can’t stop looking at.</p>
+      </div>
+      <div class="hp-feature-card">
+        <div class="hp-feature-card__icon">📍</div>
+        <h3>Made in India</h3>
+        <p>Proudly published in India by Aparna, crafted with love for Indian kids & families.</p>
+      </div>
+      <div class="hp-feature-card">
+        <div class="hp-feature-card__icon">✅</div>
+        <h3>Age-appropriate</h3>
+        <p>Each book designed for a specific age so your child learns at their own perfect pace.</p>
+      </div>
+      <div class="hp-feature-card">
+        <div class="hp-feature-card__icon">🛡</div>
+        <h3>Safe & quality</h3>
+        <p>Child-safe paper, non-toxic inks, durable pages — safe for even the tiniest readers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-section hp-testimonials" id="reviews">
+    <div class="page-width hp-section__header">
+      <span class="hp-label-pill hp-label-pill--secondary">Reviews</span>
+      <h2>What parents are saying</h2>
+    </div>
+
+    <div class="hp-testimonial-grid">
+      <article class="hp-testimonial-card hp-testimonial-card--a">
+        <div class="hp-testimonial-card__top">
+          <span class="hp-testimonial-card__avatar">PS</span>
+          <div>
+            <h3>Priya S.</h3>
+            <p>Mumbai</p>
+          </div>
+        </div>
+        <p class="hp-testimonial-card__stars">★★★★★</p>
+        <p class="hp-testimonial-card__quote">“My 4-year-old loves the ABC book! The pictures are so colorful she keeps asking me to read it again and again.”</p>
+      </article>
+      <article class="hp-testimonial-card hp-testimonial-card--b">
+        <div class="hp-testimonial-card__top">
+          <span class="hp-testimonial-card__avatar">RM</span>
+          <div>
+            <h3>Rahul M.</h3>
+            <p>Bangalore</p>
+          </div>
+        </div>
+        <p class="hp-testimonial-card__stars">★★★★★</p>
+        <p class="hp-testimonial-card__quote">“Great quality books at such an affordable price. My son finished the activity book in one sitting!”</p>
+      </article>
+      <article class="hp-testimonial-card hp-testimonial-card--c">
+        <div class="hp-testimonial-card__top">
+          <span class="hp-testimonial-card__avatar">SK</span>
+          <div>
+            <h3>Sunita K.</h3>
+            <p>Delhi</p>
+          </div>
+        </div>
+        <p class="hp-testimonial-card__stars">★★★★★</p>
+        <p class="hp-testimonial-card__quote">“Ordered for my daughter’s birthday. Packaging was neat and book quality is excellent. Very happy!”</p>
+      </article>
+      <article class="hp-testimonial-card hp-testimonial-card--d">
+        <div class="hp-testimonial-card__top">
+          <span class="hp-testimonial-card__avatar">DR</span>
+          <div>
+            <h3>Deepa R.</h3>
+            <p>Chennai</p>
+          </div>
+        </div>
+        <p class="hp-testimonial-card__stars">★★★★★</p>
+        <p class="hp-testimonial-card__quote">“My twins got different books and keep swapping! Fast delivery and amazing quality. Highly recommend!”</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="hp-newsletter">
+    <div class="page-width hp-newsletter__inner">
+      <div class="hp-newsletter__card">
+        <h2>Get new book updates from Aparna</h2>
+        <p>Be the first to know when we launch new books. No spam, just stories!</p>
+        <form class="hp-newsletter__form" action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email address" aria-label="Email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="hp-newsletter__fineprint">By subscribing you agree to our privacy policy. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="hp-footer" id="footer">
+    <div class="page-width hp-footer__inner">
+      <div class="hp-footer__brand">
+        <div class="hp-footer__logo">
+          <span>Aishvo</span> Publications
+        </div>
+        <p class="hp-footer__tagline">WHERE LITTLE STORIES BEGIN</p>
+        <p class="hp-footer__copy">Children’s books and learning products crafted with love in India by Aparna for kids aged 1–10 years.</p>
+        <div class="hp-footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <div class="hp-footer__links">
+        <p class="hp-footer__heading">QUICK LINKS</p>
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#toys">Toys</a>
+        <a href="#age-groups">Age groups</a>
+        <a href="#about">About us</a>
+        <a href="#footer">Contact us</a>
+      </div>
+
+      <div class="hp-footer__links">
+        <p class="hp-footer__heading">POLICIES</p>
+        <a href="#">Privacy policy</a>
+        <a href="#">Refund policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Shipping policy</a>
+      </div>
+
+      <div class="hp-footer__links">
+        <p class="hp-footer__heading">CONTACT</p>
+        <a href="mailto:aparna@aishvopublications.com">aparna@aishvopublications.com</a>
+        <a href="https://aishvopublications.com">aishvopublications.com</a>
+        <a href="#">@aishvopublications</a>
+        <a href="#">Published in India</a>
+      </div>
+    </div>
+
+    <div class="hp-footer__bottom page-width">
+      <p>© 2025 Aishvo Publications. All rights reserved. Founded by Aparna.</p>
+      <div class="hp-footer__badges">
+        <span>GST Registered</span>
+        <span>ISBN Publisher</span>
+        <span>Made in India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('.hp-header');
+      const menuButton = document.querySelector('.hp-header__menu-button');
+      const nav = document.querySelector('.hp-nav');
+
+      if (menuButton && header && nav) {
+        menuButton.addEventListener('click', function() {
+          header.classList.toggle('hp-header--open');
+          const expanded = header.classList.contains('hp-header--open');
+          menuButton.setAttribute('aria-expanded', expanded);
+        });
+      }
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Aishvo homepage",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Homepage",
+      "category": "Home page"
+    }
+  ]
+}
+{% endschema %}
